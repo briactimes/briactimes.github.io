@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BlaBlaCar Daily : les failles d'un système trop confiant — The Briac Times</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="container">
+    <div class="masthead-grid">
+      <div class="masthead-meta">
+        <strong>Édition du matin</strong>
+        Béthune · Hauts-de-France<br>
+        Volume LXXII · 2,50 €
+      </div>
+      <div class="masthead-title">
+        <div class="logo-frame">
+          <a href="../index.html"><img src="../assets/logo.png" alt="The Briac Times - Logo"></a>
+        </div>
+        <div class="title-block">
+          <h1><a href="../index.html" style="color:inherit;text-decoration:none;">The Briac Times</a></h1>
+          <div class="tagline">Toutes les nouvelles dignes d'intérêt</div>
+        </div>
+      </div>
+      <div class="masthead-meta right">
+        <strong>Météo du jour</strong>
+        Maxi. 16°C · Mini. 7°C<br>
+        Coucher du soleil 21h12
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav class="primary">
+  <div class="container">
+    <a href="../index.html">À la une</a>
+    <a href="#">Politique</a>
+    <a href="#">Économie</a>
+    <a href="#">International</a>
+    <a href="#" class="active">Tech</a>
+    <a href="#">Sciences</a>
+    <a href="#">Culture</a>
+    <a href="#">Sport</a>
+    <a href="#">Société</a>
+    <a href="#">Opinions</a>
+  </div>
+</nav>
+
+<main>
+  <div class="container">
+    <article class="article-page fade-in">
+      <a href="../index.html" class="back-link">Retour à la une</a>
+
+      <div class="article-page-grid">
+        <div class="article-main">
+          <header class="article-header">
+            <span class="category-tag">Tech · Mobilité · Enquête</span>
+            <h1>BlaBlaCar Daily : les failles d'un système trop confiant</h1>
+            <p class="deck">BlaBlaCar Daily promettait de démocratiser le covoiturage domicile-travail grâce à un système de géolocalisation simple et automatique. Mais cette simplicité cache des failles techniques que certains utilisateurs exploitent pour percevoir des remboursements sans avoir réellement transporté de passagers.</p>
+            <div class="article-meta">
+              <div class="author-bubble">YD</div>
+              <span class="author-name">Yanni Delattre Balcer</span>
+              <span class="meta-divider"></span>
+              <span>Service Tech</span>
+              <span class="meta-divider"></span>
+              <span>28 avril 2026</span>
+              <span class="meta-divider"></span>
+              <span>Lecture 6 min</span>
+            </div>
+          </header>
+
+          <figure class="article-hero">
+            <img src="../assets/articles/blablacar-article.webp" alt="Logo BlaBlaCar">
+          </figure>
+          <p class="article-hero-caption">BlaBlaCar Daily revendique des dizaines de milliers de trajets domicile-travail chaque mois dans le bassin minier. — Photo d'illustration</p>
+
+          <div class="article-body">
+            <p>BlaBlaCar Daily promettait de démocratiser le covoiturage domicile-travail grâce à un système de géolocalisation simple et automatique. Mais cette simplicité cache des failles techniques que certains utilisateurs exploitent pour percevoir des remboursements sans avoir réellement transporté de passagers. Enquête sur deux dérives documentées qui fragilisent la plateforme.</p>
+
+            <h2>Les faux covoiturages entre proches</h2>
+
+            <p>Une fraude difficile à détecter a été identifiée sur BlaBlaCar Daily : la simulation de trajets fictifs impliquant des proches. Un conducteur inscrit des membres de sa famille ou des amis comme passagers sur son trajet, effectue le déplacement seul, puis clôture lui-même le covoiturage à l'arrivée. La plateforme enregistre la présence de plusieurs passagers et rémunère le conducteur en conséquence, alors que le véhicule n'a transporté personne d'autre que lui.</p>
+
+            <p>Ce type de fraude est particulièrement difficile à contrer pour BlaBlaCar. Contrairement à un trajet entièrement inventé, le conducteur a bel et bien effectué le déplacement — seule la présence des passagers est fictive. La plateforme ne disposant d'aucun moyen technique pour vérifier qu'une personne physique était assise dans le véhicule, la fraude passe généralement inaperçue. Sur le plan juridique, elle est pourtant assimilable à une escroquerie au sens de l'<strong>article 313-1 du code pénal</strong>.</p>
+
+            <blockquote class="pull-quote">Le conducteur a bel et bien effectué le déplacement — seule la présence des passagers est fictive.</blockquote>
+
+            <h2>La faille de géolocalisation : un point de départ qui rapporte</h2>
+
+            <p>Un second problème technique a été mis en lumière : BlaBlaCar Daily ne vérifie pas la position GPS réelle au point de départ du trajet. Seule l'arrivée est contrôlée. Cette lacune permet à certains conducteurs de déclarer un point de départ fictif, situé plus loin de leur domicile réel, afin de gonfler artificiellement la distance du trajet et donc la rémunération perçue.</p>
+
+            <p>Cette faille illustre une limite structurelle du modèle économique de la plateforme : la vérification du trajet repose entièrement sur des données GPS que l'utilisateur maîtrise lui-même, sans recoupement indépendant. Sans validation en temps réel du point de départ — par triangulation réseau, données opérateur ou confirmation de présence physique — la plateforme ne peut pas garantir l'exactitude des distances déclarées.</p>
+
+            <h2>De l'argent public gaspillé</h2>
+
+            <p>Ce que beaucoup d'utilisateurs ignorent, c'est que la rémunération versée sur BlaBlaCar Daily ne sort pas uniquement des caisses de la plateforme — elle provient en grande partie de fonds publics. Dans le bassin minier, <strong>Artois Mobilités</strong> subventionne chaque trajet covoituré depuis 2022. Chaque conducteur perçoit entre 2 et 4 euros par passager et par trajet, entièrement financés par la collectivité. Ce dispositif déployé sur les 150 communes du réseau TADAO a permis près de 30 000 trajets en février 2024 seul.</p>
+
+            <div class="key-figure">
+              <div class="figure-number">30 000</div>
+              <div class="figure-label">trajets covoiturés en un seul mois sur le réseau TADAO en 2024 — chacun subventionné par les collectivités du bassin minier.</div>
+            </div>
+
+            <p>Ce modèle vertueux a un revers : chaque trajet fictif, chaque passager simulé, chaque kilomètre gonflé artificiellement représente une ponction directe sur des deniers publics. La fraude ne lèse donc pas seulement la plateforme — elle détourne des subventions destinées à financer une politique de mobilité durable au bénéfice de l'ensemble des habitants du territoire.</p>
+
+            <p>Ces dérives fragilisent également la crédibilité du dispositif. Sur Trustpilot, BlaBlaCar Daily affiche une note très dégradée, avec des centaines de témoignages de conducteurs honnêtes dont les trajets légitimes ne sont pas validés, de fonds bloqués pendant des mois et d'un service client injoignable.</p>
+
+            <h2>Comment la plateforme peut évoluer</h2>
+
+            <p>Plusieurs pistes techniques permettraient de fermer ces angles morts :</p>
+
+            <ul>
+              <li><strong>Validation au départ</strong> : intégrer une vérification GPS au point de départ pour limiter les déclarations de distances fictives.</li>
+              <li><strong>Détection comportementale</strong> : l'analyse des patterns d'utilisation — mêmes passagers récurrents, trajets toujours arrêtés au même endroit — peut signaler des comportements suspects.</li>
+              <li><strong>Signalement utilisateurs</strong> : tout comportement anormal peut être signalé directement via l'application BlaBlaCar.</li>
+            </ul>
+
+            <p>Les deux failles exposées peuvent sembler indépendantes, mais elles partagent la même logique : exploiter les angles morts du système de vérification. Certains utilisateurs combinent même les deux techniques en déclarant simultanément un point de départ fictif plus éloigné et des passagers imaginaires sur ce même trajet gonflé. Le résultat est une fraude démultipliée, difficile à détecter, et dont le coût final est supporté par l'ensemble des contribuables qui financent le dispositif de mobilité publique.</p>
+          </div>
+
+          <div class="share-bar">
+            <span class="share-label">Partager cet article</span>
+            <a href="#" title="X">X</a>
+            <a href="#" title="Facebook">f</a>
+            <a href="#" title="LinkedIn">in</a>
+            <a href="#" title="Email">@</a>
+          </div>
+
+          <div class="article-sources">
+            <h4>Sources</h4>
+            <ul>
+              <li><a href="https://mag.agglo-lenslievin.fr" target="_blank" rel="noopener">Artois Mobilités / Agglomération Lens-Liévin — BlaBlaCar Daily et covoiturage subventionné (2024)</a></li>
+              <li><a href="https://fr.trustpilot.com/review/blablacardaily.com" target="_blank" rel="noopener">Trustpilot — Avis BlaBlaCar Daily (2025)</a></li>
+              <li><a href="https://blablalines-support.zendesk.com/hc/fr/articles/11127602284445-Fraude-D%C3%A9finition-et-sanctions" target="_blank" rel="noopener">BlaBlaCar Daily — Fraude : définition et sanctions</a></li>
+              <li><a href="https://leocare.eu/fr/blog/arnaque-blablacar" target="_blank" rel="noopener">Leocare.eu — Arnaques au covoiturage : comment elles fonctionnent (2025)</a></li>
+              <li><a href="https://www.caradisiac.com/l-incroyable-arnaque-au-covoiturage-201453.htm" target="_blank" rel="noopener">Caradisiac — L'incroyable arnaque au covoiturage (2023)</a></li>
+              <li><a href="https://contribuablesassocies.org/2023/05/02/klaxit-l-application-de-covoiturage-qui-devalise-les-contribuables/" target="_blank" rel="noopener">Contribuables Associés — Klaxit, l'application qui dévalise les contribuables</a></li>
+              <li><a href="https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/covoiturage-la-reglementation-applicable" target="_blank" rel="noopener">Economie.gouv.fr — Covoiturage : la réglementation applicable</a></li>
+              <li><a href="https://service-public.gouv.fr/particuliers/vosdroits/F34000" target="_blank" rel="noopener">Service-Public.fr — Fraude et escroquerie en ligne</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <aside class="article-aside">
+          <div class="aside-block factbox">
+            <h4>Les chiffres clés</h4>
+            <dl>
+              <dt>Subvention par passager</dt>
+              <dd>2 à 4 € par trajet</dd>
+              <dt>Communes couvertes</dt>
+              <dd>150 (réseau TADAO)</dd>
+              <dt>Trajets en février 2024</dt>
+              <dd>≈ 30 000</dd>
+              <dt>Article applicable</dt>
+              <dd>Art. 313-1 du code pénal</dd>
+              <dt>Vérification GPS au départ</dt>
+              <dd>Aucune</dd>
+              <dt>Vérification GPS à l'arrivée</dt>
+              <dd>Oui</dd>
+            </dl>
+          </div>
+
+          <div class="aside-block">
+            <h4>À lire aussi</h4>
+            <a href="streaming.html" class="related-item">
+              <span class="tag">Tech · Société</span>
+              <span class="related-title">Streaming pirate &amp; IPTV : la fausse gratuité qui coûte cher</span>
+            </a>
+            <a href="marketplace.html" class="related-item">
+              <span class="tag">Société · Économie</span>
+              <span class="related-title">Vinted, Leboncoin : le marché de l'occasion infesté de fraudes</span>
+            </a>
+          </div>
+        </aside>
+      </div>
+    </article>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h2>The Briac Times</h2>
+        <p>Un journal indépendant fondé en 2026. Toutes les nouvelles dignes d'intérêt, du local au planétaire, vérifiées par notre rédaction.</p>
+        <div class="socials">
+          <a href="#" title="X">X</a>
+          <a href="#" title="Facebook">f</a>
+          <a href="#" title="Instagram">@</a>
+          <a href="#" title="LinkedIn">in</a>
+          <a href="#" title="RSS">»</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Rubriques</h4>
+        <ul>
+          <li><a href="#">Politique</a></li>
+          <li><a href="#">Économie</a></li>
+          <li><a href="#">International</a></li>
+          <li><a href="#">Tech</a></li>
+          <li><a href="#">Culture</a></li>
+          <li><a href="#">Sport</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Le journal</h4>
+        <ul>
+          <li><a href="#">À propos</a></li>
+          <li><a href="#">La rédaction</a></li>
+          <li><a href="#">Charte éthique</a></li>
+          <li><a href="#">Nous écrire</a></li>
+          <li><a href="#">Recrutement</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Abonnements</h4>
+        <ul>
+          <li><a href="#">Numérique 1 €/mois</a></li>
+          <li><a href="#">Papier + Numérique</a></li>
+          <li><a href="#">Étudiants</a></li>
+          <li><a href="#">Newsletter</a></li>
+          <li><a href="#">Application mobile</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 The Briac Times — Tous droits réservés</span>
+      <span>Mentions légales · CGU · Cookies · Données personnelles</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

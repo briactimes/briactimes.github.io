@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>La Bombe à Retardement : le « Code Zombie » ou la malfaçon par négligence — The Briac Times</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="container">
+    <div class="masthead-grid">
+      <div class="masthead-meta">
+        <strong>Édition du matin</strong>
+        Béthune · Hauts-de-France<br>
+        Volume LXXII · 2,50 €
+      </div>
+      <div class="masthead-title">
+        <div class="logo-frame">
+          <a href="../index.html"><img src="../assets/logo.png" alt="The Briac Times - Logo"></a>
+        </div>
+        <div class="title-block">
+          <h1><a href="../index.html" style="color:inherit;text-decoration:none;">The Briac Times</a></h1>
+          <div class="tagline">Toutes les nouvelles dignes d'intérêt</div>
+        </div>
+      </div>
+      <div class="masthead-meta right">
+        <strong>Météo du jour</strong>
+        Maxi. 16°C · Mini. 7°C<br>
+        Coucher du soleil 21h12
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav class="primary">
+  <div class="container">
+    <a href="../index.html">À la une</a>
+    <a href="#">Politique</a>
+    <a href="#">Économie</a>
+    <a href="#">International</a>
+    <a href="#" class="active">Tech</a>
+    <a href="#">Sciences</a>
+    <a href="#">Culture</a>
+    <a href="#">Sport</a>
+    <a href="#">Société</a>
+    <a href="#">Opinions</a>
+  </div>
+</nav>
+
+<main>
+  <div class="container">
+    <article class="article-page fade-in">
+      <a href="../index.html" class="back-link">Retour à la une</a>
+
+      <div class="article-page-grid">
+        <div class="article-main">
+          <header class="article-header">
+            <span class="category-tag">Tech · Sécurité · Tribune</span>
+            <h1>La Bombe à Retardement : le « Code Zombie » ou la malfaçon par négligence</h1>
+            <p class="deck">Près de la moitié du code généré par les modèles de langage contient des vulnérabilités critiques dès sa création. Bienvenue à l'ère du « Code Zombie » : un code qui fonctionne en apparence, mais dont la structure interne ressemble à une boîte noire truffée de failles. Tribune sur une fraude par négligence.</p>
+            <div class="article-meta">
+              <div class="author-bubble">BL</div>
+              <span class="author-name">Briac Le Meillat</span>
+              <span class="meta-divider"></span>
+              <span>Service Tech</span>
+              <span class="meta-divider"></span>
+              <span>28 avril 2026</span>
+              <span class="meta-divider"></span>
+              <span>Lecture 5 min</span>
+            </div>
+          </header>
+
+          <figure class="article-hero">
+            <img src="../assets/articles/zombie-article.jpg" alt="Lignes de code défilant sur un écran sombre">
+          </figure>
+          <p class="article-hero-caption">Près de la moitié du code généré par IA contient des vulnérabilités critiques dès sa création, selon Practical DevSecOps. — Photo d'illustration</p>
+
+          <div class="article-body">
+            <p>Si le code généré par IA est une bénédiction pour les délais, il devient une plaie pour la pérennité des systèmes. La productivité de surface masque une dette structurelle qui ne se voit qu'au moment où elle explose.</p>
+
+            <h2>L'exploitation des failles de productivité</h2>
+
+            <p>Le rapport <strong>Practical DevSecOps</strong> (mars 2026) pointe un fait alarmant : <strong>près de la moitié du code généré par les LLM</strong> contient des vulnérabilités critiques dès sa création. On entre dans l'ère du <em>« Code Zombie »</em> : un code qui fonctionne en apparence, mais dont la structure interne est une boîte noire, souvent truffée de redondances et de failles de sécurité.</p>
+
+            <div class="key-figure">
+              <div class="figure-number">≈ 50 %</div>
+              <div class="figure-label">du code généré par les modèles de langage contient des vulnérabilités critiques dès sa création (Practical DevSecOps, mars 2026).</div>
+            </div>
+
+            <h2>Une fraude à la qualité industrielle</h2>
+
+            <p>Le classement <strong>OWASP LLM Top 10</strong> montre que les injections de prompts et les dépendances obsolètes se multiplient. Livrer une application basée sur du code non vérifié à un client s'apparente à une forme de malfaçon industrielle. On vend une structure solide, mais on livre une architecture en carton-pâte.</p>
+
+            <p>C'est une fraude par négligence : on privilégie le « <em>Time-to-Market</em> » au détriment de la sécurité du consommateur final.</p>
+
+            <blockquote class="pull-quote">On vend une structure solide, mais on livre une architecture en carton-pâte.</blockquote>
+
+            <h2>La responsabilité du codeur</h2>
+
+            <p>J'ai moi-même ressenti ce vertige devant mon écran : voir l'IA pondre 50 lignes de code parfaites en deux secondes. Si je ne prends pas le temps de décortiquer chaque fonction, je laisse une porte ouverte à des failles que je ne saurai même pas identifier demain.</p>
+
+            <p>Ma responsabilité, c'est de transformer ce « flux machine » en un système maîtrisé. Reprendre de bonnes habitudes — tester manuellement, vérifier les imports, comprendre l'architecture — c'est refuser de livrer une coquille vide. Le développeur doit rester le garant de la sécurité, sous peine de devenir le complice involontaire d'une future cyberattaque.</p>
+
+            <h2>Le coût caché de la précipitation</h2>
+
+            <p>La dette technique ainsi accumulée ne se compte plus en heures de travail, mais en millions d'euros de risques potentiels. Mais au-delà de la technique et de la sécurité, cette délégation massive pose une question plus profonde, presque existentielle : que reste-t-il de nous dans ce que nous créons ?</p>
+          </div>
+
+          <div class="share-bar">
+            <span class="share-label">Partager cet article</span>
+            <a href="#" title="X">X</a>
+            <a href="#" title="Facebook">f</a>
+            <a href="#" title="LinkedIn">in</a>
+            <a href="#" title="Email">@</a>
+          </div>
+
+          <div class="article-sources">
+            <h4>Sources</h4>
+            <ul>
+              <li><a href="#" target="_blank" rel="noopener">Practical DevSecOps — AI Security Statistics 2026: Latest Data &amp; Trends</a></li>
+              <li><a href="#" target="_blank" rel="noopener">OWASP — LLM Top 10 : Guide de référence 2025/2026</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <aside class="article-aside">
+          <div class="aside-block factbox">
+            <h4>Les chiffres clés</h4>
+            <dl>
+              <dt>Code IA vulnérable</dt>
+              <dd>≈ 50 % (Practical DevSecOps)</dd>
+              <dt>Référentiel</dt>
+              <dd>OWASP LLM Top 10</dd>
+              <dt>Risques majeurs</dt>
+              <dd>Injections de prompts, dépendances obsolètes</dd>
+              <dt>Concept clé</dt>
+              <dd>« Code Zombie »</dd>
+              <dt>Coût caché</dt>
+              <dd>Dette technique chiffrée en millions d'euros</dd>
+            </dl>
+          </div>
+
+          <div class="aside-block">
+            <h4>À lire aussi</h4>
+            <a href="mirage.html" class="related-item">
+              <span class="tag">Tech · Tribune</span>
+              <span class="related-title">Le Mirage du « Dev-Prompt » : quand l'imposture technique menace l'expertise</span>
+            </a>
+            <a href="artisan.html" class="related-item">
+              <span class="tag">Tribune · Société</span>
+              <span class="related-title">Le Désert de l'Artisan : vers une dépossession du savoir</span>
+            </a>
+          </div>
+        </aside>
+      </div>
+    </article>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h2>The Briac Times</h2>
+        <p>Un journal indépendant fondé en 2026. Toutes les nouvelles dignes d'intérêt, du local au planétaire, vérifiées par notre rédaction.</p>
+        <div class="socials">
+          <a href="#" title="X">X</a>
+          <a href="#" title="Facebook">f</a>
+          <a href="#" title="Instagram">@</a>
+          <a href="#" title="LinkedIn">in</a>
+          <a href="#" title="RSS">»</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Rubriques</h4>
+        <ul>
+          <li><a href="#">Politique</a></li>
+          <li><a href="#">Économie</a></li>
+          <li><a href="#">International</a></li>
+          <li><a href="#">Tech</a></li>
+          <li><a href="#">Culture</a></li>
+          <li><a href="#">Sport</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Le journal</h4>
+        <ul>
+          <li><a href="#">À propos</a></li>
+          <li><a href="#">La rédaction</a></li>
+          <li><a href="#">Charte éthique</a></li>
+          <li><a href="#">Nous écrire</a></li>
+          <li><a href="#">Recrutement</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Abonnements</h4>
+        <ul>
+          <li><a href="#">Numérique 1 €/mois</a></li>
+          <li><a href="#">Papier + Numérique</a></li>
+          <li><a href="#">Étudiants</a></li>
+          <li><a href="#">Newsletter</a></li>
+          <li><a href="#">Application mobile</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 The Briac Times — Tous droits réservés</span>
+      <span>Mentions légales · CGU · Cookies · Données personnelles</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
