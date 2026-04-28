@@ -8,6 +8,12 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
+<style>
+.filtered-out, .section-hidden { display: none !important; }
+nav.primary a { cursor: pointer; }
+.lead-section.partial-lead .lead-article.filtered-out + .aside-stack,
+.lead-section.partial-lead .lead-article.filtered-out ~ .aside-stack { grid-column: 1 / -1; }
+</style>
 </head>
 <body>
 
@@ -39,16 +45,12 @@
 
 <nav class="primary">
   <div class="container">
-    <a href="#" class="active">À la une</a>
-    <a href="#">Politique</a>
-    <a href="#">Économie</a>
-    <a href="#">International</a>
-    <a href="#">Tech</a>
-    <a href="#">Sciences</a>
-    <a href="#">Culture</a>
-    <a href="#">Sport</a>
-    <a href="#">Société</a>
-    <a href="#">Opinions</a>
+    <a href="#" class="active" data-filter="all">À la une</a>
+    <a href="#" data-filter="economie">Économie</a>
+    <a href="#" data-filter="tech">Tech</a>
+    <a href="#" data-filter="culture">Culture</a>
+    <a href="#" data-filter="societe">Société</a>
+    <a href="#" data-filter="opinions">Opinions</a>
   </div>
 </nav>
 
@@ -56,7 +58,7 @@
   <div class="container">
 
     <section class="lead-section">
-      <article class="lead-article fade-in">
+      <article class="lead-article fade-in" data-categories="tech tribune opinions">
         <div class="image-wrap">
           <img src="assets/articles/mirage-preview.webp" alt="Code source généré par intelligence artificielle">
         </div>
@@ -70,7 +72,7 @@
       </article>
 
       <aside class="aside-stack">
-        <div class="aside-article fade-in">
+        <div class="aside-article fade-in" data-categories="tech">
           <div class="image-wrap">
             <img src="assets/articles/zombie-preview.webp" alt="Lignes de code et alertes de vulnérabilités">
           </div>
@@ -80,7 +82,7 @@
           <div class="byline">Par <strong>Briac Le Meillat</strong> <span class="dot">·</span> 5 min</div>
         </div>
 
-        <div class="aside-article fade-in">
+        <div class="aside-article fade-in" data-categories="tribune opinions societe">
           <div class="image-wrap">
             <img src="assets/articles/artisan-preview.webp" alt="Mains sur un clavier, métier de développeur">
           </div>
@@ -97,7 +99,7 @@
       <h2 class="section-title">Notre sélection</h2>
       <div class="article-grid">
 
-        <article class="article-card featured-large fade-in">
+        <article class="article-card featured-large fade-in" data-categories="economie tech">
           <div class="image-wrap">
             <img src="assets/articles/bercy-preview.webp" alt="Bercy lutte contre la fraude fiscale">
           </div>
@@ -107,7 +109,7 @@
           <div class="byline">Par <strong>Alex Jovéniaux</strong> <span class="dot">·</span> Service Économie <span class="dot">·</span> 7 min</div>
         </article>
 
-        <article class="article-card fade-in">
+        <article class="article-card fade-in" data-categories="tech">
           <div class="image-wrap">
             <img src="assets/articles/fifa-preview.webp" alt="FIFA Coins et fraude EA Sports">
           </div>
@@ -117,7 +119,7 @@
           <div class="byline">Par <strong>Arthur Fievet</strong> <span class="dot">·</span> 6 min</div>
         </article>
 
-        <article class="article-card fade-in">
+        <article class="article-card fade-in" data-categories="tech">
           <div class="image-wrap">
             <img src="assets/articles/pubg-preview.webp" alt="PUBG, Warzone et réseau de triche Chicken Drumstick">
           </div>
@@ -127,7 +129,7 @@
           <div class="byline">Par <strong>Arthur Fievet</strong> <span class="dot">·</span> 7 min</div>
         </article>
 
-        <article class="article-card fade-in">
+        <article class="article-card fade-in" data-categories="societe">
           <div class="image-wrap">
             <img src="assets/articles/marketplace-preview.webp" alt="Marché de l'occasion en ligne et fraudes">
           </div>
@@ -137,7 +139,7 @@
           <div class="byline">Par <strong>Yanni Delattre Balcer</strong> <span class="dot">·</span> 6 min</div>
         </article>
 
-        <article class="article-card fade-in">
+        <article class="article-card fade-in" data-categories="tech">
           <div class="image-wrap">
             <img src="assets/articles/fortnite-preview.webp" alt="Fortnite et bannissements pour triche">
           </div>
@@ -147,7 +149,7 @@
           <div class="byline">Par <strong>Arthur Fievet</strong> <span class="dot">·</span> 5 min</div>
         </article>
 
-        <article class="article-card fade-in">
+        <article class="article-card fade-in" data-categories="economie">
           <div class="image-wrap">
             <img src="assets/articles/crypto-preview.jpeg" alt="Cryptomonnaies et fiscalité">
           </div>
@@ -157,7 +159,7 @@
           <div class="byline">Par <strong>Alex Jovéniaux</strong> <span class="dot">·</span> 5 min</div>
         </article>
 
-        <article class="article-card featured-large fade-in">
+        <article class="article-card featured-large fade-in" data-categories="tech culture">
           <div class="image-wrap">
             <img src="assets/articles/streaming-preview.webp" alt="Streaming pirate et IPTV illégale">
           </div>
@@ -167,7 +169,7 @@
           <div class="byline">Par <strong>Yanni Delattre Balcer</strong> <span class="dot">·</span> Service Tech <span class="dot">·</span> 7 min</div>
         </article>
 
-        <article class="article-card fade-in">
+        <article class="article-card fade-in" data-categories="tech">
           <div class="image-wrap">
             <img src="assets/articles/blablacar-preview.webp" alt="Covoiturage et géolocalisation">
           </div>
@@ -177,7 +179,7 @@
           <div class="byline">Par <strong>Yanni Delattre Balcer</strong> <span class="dot">·</span> 6 min</div>
         </article>
 
-        <article class="article-card fade-in">
+        <article class="article-card fade-in" data-categories="economie">
           <div class="image-wrap">
             <img src="assets/articles/fraude-preview.jpeg" alt="Fraude fiscale en France">
           </div>
@@ -193,7 +195,7 @@
       <div class="container">
         <h2 class="section-title" style="color: var(--paper); border-color: var(--paper);">Opinions &amp; Tribunes</h2>
         <div class="opinion-grid">
-          <div class="opinion-card">
+          <div class="opinion-card" data-categories="opinions">
             <div class="label">Édito</div>
             <h3>« Il faut de la méthode, de la méthode, de la méthode, de la méthode »</h3>
             <div class="author-line">
@@ -201,7 +203,7 @@
               <span>Sylvain Merchez · Enseignant à l'IUT de Béthune</span>
             </div>
           </div>
-          <div class="opinion-card">
+          <div class="opinion-card" data-categories="opinions">
             <div class="label">Tribune</div>
             <h3>« J'ai était banni de l'Iran »</h3>
             <div class="author-line">
@@ -209,7 +211,7 @@
               <span>Julien Sawicki · Étudiant à l'IUT de Béthune</span>
             </div>
           </div>
-          <div class="opinion-card">
+          <div class="opinion-card" data-categories="opinions">
             <div class="label">Chronique</div>
             <h3>« Ça pue ici, ouvrez les fenêtres sinon on ne va pas s'en sortir »</h3>
             <div class="author-line">
@@ -276,6 +278,43 @@
     </div>
   </div>
 </footer>
+
+<script>
+(function() {
+  var navLinks = document.querySelectorAll('nav.primary a[data-filter]');
+  var filterables = document.querySelectorAll('[data-categories]');
+  var sections = document.querySelectorAll('main .lead-section, main .grid-section, main .opinion-strip');
+  var leadSection = document.querySelector('main .lead-section');
+
+  function applyFilter(category) {
+    filterables.forEach(function(el) {
+      var cats = el.getAttribute('data-categories').split(' ');
+      var match = category === 'all' || cats.indexOf(category) !== -1;
+      el.classList.toggle('filtered-out', !match);
+    });
+    sections.forEach(function(section) {
+      var hasVisible = section.querySelector('[data-categories]:not(.filtered-out)') !== null;
+      section.classList.toggle('section-hidden', !hasVisible);
+    });
+    if (leadSection) {
+      var leadArticle = leadSection.querySelector('.lead-article');
+      var leadHidden = leadArticle && leadArticle.classList.contains('filtered-out');
+      leadSection.classList.toggle('partial-lead', leadHidden);
+    }
+    navLinks.forEach(function(link) {
+      link.classList.toggle('active', link.getAttribute('data-filter') === category);
+    });
+  }
+
+  navLinks.forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      applyFilter(this.getAttribute('data-filter'));
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  });
+})();
+</script>
 
 </body>
 </html>
